@@ -1,0 +1,131 @@
+
+MACHINE LEARNING – WORKSHEET 11
+(LINEAR REGRESSION)
+
+In Q1 to Q8, only one option is correct, Choose the correct option:
+
+1. What happens to R2 measure if we add a new feature?
+A) remains same B) always increases
+C) may or may not increase D) always decreases
+
+ANS:B) always increases
+
+2. The correct relationship between SST, SSR and SSE is given by:
+ A) SSR = SST + SSE B) SST = SSR + SSE
+C) SSE = SSR – SST D) None of the above
+
+ANS:B) SST = SSR + SSE
+
+3. Residuals in regression analysis can be defined as:
+ A) difference between the actual value and the predicted value.
+B) difference between the actual value and the mean of predicted value.
+C) difference between the actual value and mean of dependent variable.
+D) None of the above.
+
+ANS:  A) difference between the actual value and the predicted value.
+
+4. In a simple linear regression model, if we change the input variable by 1 unit, then how much output variable
+will change?
+A) By 1 B) No Change
+C) By its slope D) None of the above
+
+ANS:C) By its slope
+
+5. If the coefficient of determination is equal to 1, then correlation coefficient:
+A) must also be equal to 1 B) can be either -1 or 1
+C) can be any value between -1 to 1 D) must be -1
+
+ANS: C) can be any value between -1 to 1
+
+6. Which of the following plot is best suited for the linear relationship of continuous variables?
+A) Scatter plot B) Histograms
+ C) Pie charts D) All of the above
+
+ANS:A) Scatter plot
+
+7. The ratio of MSR/MSE produces:
+ A) t-statistics B) f-statistics
+C) z-statistics D) None of the above.
+
+ANS: B) f-statistics
+
+8. Which of the following regularizations uses only L2 normalization for its penalty parameter?
+A) Lasso B) Elastic Nets
+C) Ridge D) All of the above
+
+ANS: C) Ridge 
+
+In Q9 to Q11, more than one options are correct, Choose all the correct options:
+
+9. Which of the following statement/s are true for best fitted line?
+A) It shows the causal relationship between dependent and independent variables
+B) It shows the positive or negative relation between dependent and independent variables
+C) It always goes through origin
+D) It is a straight line that is the best approximation of the given data sets
+
+ANS: B) It shows the positive or negative relation between dependent and independent variables
+C) It always goes through origin
+
+10. Regularizations helps in:
+A) Reducing the training time B) Generalizing the test set
+C) Automatic feature selection D) Grouping the data
+
+ANS:	 A) Reducing the training time
+	B) Generalizing the test set
+
+11. Linear regression can be implemented through:
+A) Normal Equation B) Singular Value Decomposition
+C) Parity checks D) nodes
+
+ANS:	 A) Normal Equation
+	D) nodes
+
+Q12 to Q15 are subjective answer type questions, Answer them briefly.
+
+12. Explain R2 and adjusted R2 metrics?
+
+ANS: R-squared (R2) is a statistical measure that represents the proportion of the variance for a dependent variable that's explained by an independent variable or variables in a regression model.It may also be known as the coefficient of determination.
+The Formula for R-Squared Is
+
+​	  R2=1-Unexplained Variation/Total Variation
+​
+Adjusted R2 metrics:
+
+R2 shows how well terms (data points) fit a curve or line. Adjusted R2 also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. If we add more and more useless variables to a model, adjusted r-squared will decrease. If we add more useful variables, adjusted r-squared will increase.
+Adjusted R2 will always be less than or equal to R2.
+ 
+adjusted R2=1-[(1-R2)(n-1)/n-k-1]
+
+13. Explain the cost function of linear regression?
+
+ANS:In the case of gradient descent, the objective is to find a line of best fit for some given inputs, or X values, and any number of Y values, or outputs. A cost function is defined as:
+a function that maps an event or values of one or more variables onto a real number intuitively representing some “cost” associated with the event.
+In this situation, the event we are finding the cost of is the difference between estimated values, or the hypothesis and the real values — the actual data we are trying to fit a line to.
+A linear cost function expresses cost as a linear function of the number of items. In other words, C = mx + b. Here, C is the total cost, and x is the number of items. In this context, the slope m is called the marginal cost and b is called the fixed cost.
+
+14. Differentiate SSE, SSR and SST.
+
+ANS:
+SST-The sum of squares total, denoted SST, is the squared differences between the observed dependent variable and its mean. 
+It is a measure of the total variability of the dataset.
+
+SSR-The second term is the sum of squares due to regression, or SSR. It is the sum of the differences between the predicted value and the mean of the dependent.
+If this value of SSR is equal to the sum of squares total, it means our regression model captures all the observed variability and is perfect. Once again, we have to mention that another common notation is ESS or explained sum of squares.
+
+SSE-The last term is the sum of squares error, or SSE. The error is the difference between the observed value and the predicted value.
+We usually want to minimize the error. The smaller the error, the better the estimation power of the regression.
+
+Mathematically, SST = SSR + SSE
+
+15. What are the various evaluation metrics for linear regression?
+
+ANS: The various metrics used to evaluate the results of the prediction are : Mean Squared Error(MSE) Root-Mean-Squared-Error(RMSE). Mean-Absolute-Error(MAE).R-squared, Adjusted R-squared, 
+
+Mean Squared Error (MSE):
+The most common metric for regression tasks is MSE. It has a convex shape. It is the average of the squared difference between the predicted and actual value. Since it is differentiable and has a convex shape, it is easier to optimize.
+Mean Absolute Error (MAE):
+This is simply the average of the absolute difference between the target value and the value predicted by the model. Not preferred in cases where outliers are prominent.
+Root Mean Squared Error (RMSE):
+This is the square root of the average of the squared difference of the predicted and actual value.
+R-squared or Coefficient of Determination:
+This metric represents the part of the variance of the dependent variable explained by the independent variables of the model. It measures the strength of the relationship between your model and the dependent variable.
